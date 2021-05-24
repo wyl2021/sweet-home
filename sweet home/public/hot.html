@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sweet Home</title>
+	<link rel="stylesheet" type="text/css" href="css/xianya.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/reveal.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="header_nr">
+				<div class="left">欢迎浏览Sweet Home官方旗舰店!</div>
+				<div class="right">
+					<div class="search">
+						<form method="post" action="">
+							<input type="text" name="search" class="txtSearch"/>
+							<input type="image" src="images/search.png"/>
+						</form>
+					</div>
+					<div class="menu">
+						<a href="#" data-reveal-id="register" data-animation="fade">注册</a>|
+						<a href="#" data-reveal-id="register1" data-animation="fade">我的账号</a>|
+						<a href="#"  data-reveal-id="register2" data-animation="fade">购物车</a>
+						<a href="#"  data-reveal-id="register3" data-animation="fade" >管理员</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="logo">
+		<img src="images/index_03.jpg" width="166" height="67"/>
+	</div>
+
+	<div class="nav">
+		<div class="nav_nr">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="xiaji.html">蛋糕</a></li>
+				<li><a href="hot.html">冰淇淋</a></li>
+				<li><a href="type.html">饮料</a></li>
+				<li><a href="type.html">咖啡</a></li>
+				<li><a href="type.html">小吃</a></li>
+				<li><a href="type.html">甜品</a></li>
+				<li><a href="type.html">鲜花</a></li>
+			</ul>
+		</div>
+	</div>
+	</header>
+
+
+
+<div id="content">
+   <div class="xiaji_top">
+	Ice Cream
+   </div>
+   <div class="main_hot">
+	<ul>
+		<li class="line"><img src="images/cp/06.jpg" width="491"></li>
+		<li><img src="images/cp/07.jpg" width="491"></li>
+		<li class="line"><img src="images/cp/08.jpg" width="491"></li>
+		<li><img src="images/cp/09.jpg" width="491"></li>
+		<li class="line"><img src="images/cp/10.jpg" width="491"></li>
+		<li><img src="images/cp/11.jpg" width="491"></li>
+		<li class="line"><img src="images/cp/12.jpg" width="491"></li>
+		<li><img src="images/cp/13.jpg" width="491"></li>
+		<li class="line"><img src="images/cp/14.jpg" width="491"></li>
+		<li><img src="images/cp/05.jpg" width="491"></li>
+	</ul>
+   </div>
+	<div class="clearfix"></div>
+</div> 
+</div>
+
+<footer>
+	<div class="foot">
+		<div class="foot_li">
+			<span>销售网点</span>
+			<a href="#">各地专卖店</a>
+			<a href="#">网站导航</a>
+		</div>
+		<div class="foot_li">
+			<span>400-001-7021</span>
+			<a href="#">网上购物的十大理由</a>
+			<a href="#">在线购物帮助</a>
+			<a href="#">客户服务</a>
+		</div>
+		<div class="foot_li">
+			<span>走进我们</span>
+			<a href="#">视频</a>
+			<a href="#">公司信息</a>
+			<a href="#">求职</a>
+			<a href="#">店铺招聘</a>
+		</div>
+		<div class="foot_li">
+			<span>购物流程</span>
+			<a href="#">会员介绍</a>
+			<a href="#">生活旅行/团购</a>
+			<a href="#">常见问题</a>
+		</div>
+		<div class="foot_li">
+			<span>支付方式</span>
+			<a href="#">货到付款</a>
+			<a href="#">在线支付</a>
+			<a href="#">分期付款</a>
+			<a href="#">邮局汇款</a>
+			<a href="#">公司转账</a>
+		</div>
+		<div class="foot_li">
+			<span>售后政策</span>
+			<a href="#">价格保护</a>
+			<a href="#">退款说明</a>
+			<a href="#">返修/退换货</a>
+			<a href="#">取消订单</a>
+		</div>
+	</div>
+</footer>
+<div class="clearfix"></div>
+<div class="copyright">
+	Copyright &copy;2010-2021 甜蜜家园Sweet Home.com版权所有 浙ICP88888888号
+</div>
+
+<div id="register" class="reveal-modal">
+	<h1>顾客注册</h1>
+	<form method="post" action="user/reg">
+		<table>
+			<tr>
+			<td><label>您的姓名：</label></td>
+			<td><input type="text" name="uname"></td>
+			</tr>
+				<tr>
+				 <td><label >输入密码：</label></td>
+				 <td><input type="password" name="upwd"></td>
+			 </tr>
+			 <tr>
+				 <td><label >输入邮箱：</label></td>
+				 <td><input type="text" name="email" ></td>
+			 </tr>
+			 <tr>
+				 <td><label>输入手机：</label></td>
+			 <td><input type="text" name="phone" ></td>
+			</tr>
+			<tr>
+				<td><label >性别：</label></td>
+			<td><input type="text" name="gender" ></td>
+		   </tr>
+			<tr>
+				<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+			</tr>
+		 </table>
+	</form>
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="register1" class="reveal-modal">
+	<h1>顾客登录</h1>
+	<form method="post" action="user/login" style="display: block " id="dl" >
+		   <table>
+			<tr>
+			<td><label>您的姓名：</label></td>
+			<td><input type="text" name="uname"></td>
+			</tr>
+				<tr>
+				 <td><label >输入密码：</label></td>
+				 <td><input type="password" name="upwd"></td>
+			 </tr>
+			<tr>
+				<td colspan="2" align="center"><input type="image" src="images/buttom.jpg" onclick="dl()"></td>
+				<h3 onclick="zx()">注销</h3>
+				<h3 onclick="xg()">修改信息</h3>
+			</tr>
+		 </table>
+		</form>
+		
+		<form method="get" action="user/delete" style="display:none " id="zx">
+		 <table>
+			<tr>
+			<td><label>用户编号</label></td>
+			<td><input type="text" name="uid"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="image" src="images/zhuxiao.jpg"></td>
+			</tr>
+			
+		 </table>
+	</form>
+	<form method="get" action="user/update" style="display:none " id="xg">
+		<table>
+				<tr>
+				<td><label>用户编号：</label></td>
+				<td><input type="text" name="uid"></td>
+				</tr>
+			<tr>
+			<td><label>您的姓名：</label></td>
+			<td><input type="text" name="uname"></td>
+			</tr>
+			<tr>
+				 <td><label >输入密码：</label></td>
+				 <td><input type="password" name="upwd"></td>
+			 </tr>
+			 <tr>
+				<td><label >输入邮箱：</label></td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td><label >输入手机：</label></td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+			</tr>
+		 </table>
+	</form>
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="register2" class="reveal-modal">
+	<h1>顾客登录</h1>
+	<form method="post" action="user/login">
+		<table>
+			<tr>
+			<td><label>您的姓名：</label></td>
+			<td><input type="text" name="uname"></td>
+			</tr>
+				<tr>
+				 <td><label >输入密码：</label></td>
+				 <td><input type="password" name="upwd"></td>
+			 </tr>
+			<tr>
+				<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+			</tr>
+		 </table>
+	</form>
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="register3" class="reveal-modal">
+		<h1>顾客查询</h1>
+		<form method="get" action="user/list">
+			<table>
+				<tr>
+				<td><label>编号：</label></td>
+				<td><input type="text" name="pno"></td>
+				</tr>
+					<tr>
+					 <td><label >数量：</label></td>
+					 <td><input type="text" name="count"></td>
+				 </tr>
+				<tr>
+					<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+				</tr>
+			 </table>
+		</form>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+
+
+
+<script src="js/jquery-1.6.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/jquery.reveal.js"></script>
+<script>
+        var mySwiper = new Swiper('.swiper-container',{
+
+          autoplay:true,//可选选项
+        })
+</script>
+
+<script>
+	function zx(){
+		document.getElementById("dl").style.display="none";
+		document.getElementById("zx").style.display="block";
+	
+	}
+	function dl(){
+		document.getElementById("dl").style.display="block";
+		document.getElementById("zx").style.display="none";
+	}
+	function xg(){
+		document.getElementById("dl").style.display="none";
+		document.getElementById("xg").style.display="block";
+	}
+	</script>
+	
+
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sweet Home</title>
+	<link rel="stylesheet" type="text/css" href="css/xianya.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/reveal.css">
+</head>
+<body>
+	
+<header>
+		<div class="header">
+			<div class="header_nr">
+				<div class="left">欢迎浏览Sweet Home官方旗舰店!</div>
+				<div class="right">
+					<div class="search">
+						<form method="post" action="">
+							<input type="text" name="search" class="txtSearch"/>
+							<input type="image" src="images/search.png"/>
+						</form>
+					</div>
+					<div class="menu">
+						<a href="#" data-reveal-id="register" data-animation="fade">注册</a>|
+						<a href="#" data-reveal-id="register1" data-animation="fade">我的账号</a>|
+						<a href="#"  data-reveal-id="register2" data-animation="fade">购物车</a>
+						<a href="#"  data-reveal-id="register3" data-animation="fade" >管理员</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="logo">
+		<img src="images/index_03.jpg" width="166" height="67"/>
+	</div>
+
+	<div class="nav">
+		<div class="nav_nr">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="xiaji.html">蛋糕</a></li>
+				<li><a href="hot.html">冰淇淋</a></li>
+				<li><a href="type.html">饮料</a></li>
+				<li><a href="type.html">咖啡</a></li>
+				<li><a href="type.html">小吃</a></li>
+				<li><a href="type.html">甜品</a></li>
+				<li><a href="type.html">鲜花</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div id="content">
+	<div class="type_main">
+		<div class="type_left">
+
+			<div class="left_top">类目</div>
+			<ul>
+				<li><i></i><a href="#">sweet home</a></li>
+				<li><i></i><a href="#">sweet home</a></li>
+				<li><i></i><a href="#">sweet home</a></li>
+				<li><i></i><a href="#">sweet home</a></li>
+				<li><i></i><a href="#">sweet home</a></li>
+				<li><i></i><a href="#">sweet home</a></li>
+			</ul>
+		</div>
+		<div class="right_detail">
+			<div class="d_top">
+				了解商品详情
+			</div>
+			<div class="d_left">
+				<div class="box">
+					<img src="images/cp/x1.jpg" width="310" height="260">
+				</div>
+				<!-- <ul>
+					<li class="active"><img src="images/01_small.jpg" width="50"></li>
+					<li><img src="images/02_small.jpg" width="50"></li>
+					<li><img src="images/03_small.jpg" width="50"></li>
+					<li><img src="images/04_small.jpg" width="50"></li>
+					<li><img src="images/05_small.jpg" width="50"></li>
+				</ul> -->
+			</div>
+			<div class="d_right">
+				<div class="detail_a">
+					SH 网红ins创意韩式文艺复古定制卡通生日蛋糕
+				</div>
+				<div class="detail_b">
+					京东 价：&yen;159.00(降价通知)
+				</div>
+				<div class="detail_c">
+					配送至：宁波 支持货到付款到付款运费5元
+				</div>
+				<div class="detail_a">
+					选择尺寸：5寸 6寸 7寸 8寸
+				</div>
+				<div class="detail_d">
+						<!-- <form action="/cart/add" method="get">
+							商品编号：<input type="text" name="cid"><br>
+							商品数量：<input type="text" name="count"><br>
+							<input type="image" src="images/gwc.jpg"   width="120">
+						</form> -->
+						
+						<div id="register5" class="reveal-modal">
+							<form action="/product/delete" method="get">
+								商品编号：<input type="text" name="lid"><br>
+								<input type="image" src="images/buttom.jpg"> 
+						</form></div>
+						<a href="#"  data-reveal-id="register5" data-animation="fade">删除商品</a> 
+						<div id="register7" class="reveal-modal">
+							<form action="/product/list" method="get">
+								商品编号：<input type="text" name="pno"><br>
+								大小：<input type="text" name="pageSize"><br>
+
+								<input type="image" src="images/buttom.jpg">
+						</form></div>
+						<a href="#"  data-reveal-id="register7" data-animation="fade" >商品列表</a> 
+						<div id="register6" class="reveal-modal">
+								<form action="/product/add" method="POST">
+									商品编号：<input type="text" name="product_id"><br>
+									商品标题：<input type="text" name="title"><br>
+									商品价格：<input type="text" name="price"><br>
+									商品大小：<input type="text" name="size"><br>
+									商品名称：<input type="text" name="product_name"><br>
+									类别分类：<input type="text" name="family_id"><br>
+									详细说明：<input type="text" name="details"><br>
+									上架时间：<input type="text" name="shelf_time"><br>
+									售出数量：<input type="text" name="sold_count"><br>
+									是否售卖：<input type="text" name="is_onsale"><br>
+									<input type="image" src="images/buttom.jpg">  
+							</form></div>
+							<a href="#"  data-reveal-id="register6" data-animation="fade" >商品添加</a> 
+						</div>
+			</div>
+			<div class="clearfix"></div>
+			 <div class="d_nr_top" >
+				<a data-reveal-id="register4" data-animation="fade">详细介绍</a>
+			</div>
+		  <form method="get" action="user/detail" style="display:block " id="gwdetail">
+				<tr>
+						<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+					</tr>
+					
+		</form>
+			<!--<div class="d_nr_img">
+				<img src="images/cp/5565114eN16059f0d.jpg">
+                <img src="images/cp/5565114eNd6455416.jpg">
+                <img src="images/cp/5565114fNe6a2602b.jpg">
+                <img src="images/cp/5565115aNb58ef095 (1).jpg">
+			</div> -->
+
+
+</div>
+		</div>
+	   
+		<div class="clearfix"></div>
+	</div>
+ </div>
+
+ <footer>
+	<div class="foot">
+		<div class="foot_li">
+			<span>销售网点</span>
+			<a href="#">各地专卖店</a>
+			<a href="#">网站导航</a>
+		</div>
+		<div class="foot_li">
+			<span>400-001-7021</span>
+			<a href="#">网上购物的十大理由</a>
+			<a href="#">在线购物帮助</a>
+			<a href="#">客户服务</a>
+		</div>
+		<div class="foot_li">
+			<span>走进我们</span>
+			<a href="#">视频</a>
+			<a href="#">公司信息</a>
+			<a href="#">求职</a>
+			<a href="#">店铺招聘</a>
+		</div>
+		<div class="foot_li">
+			<span>购物流程</span>
+			<a href="#">会员介绍</a>
+			<a href="#">生活旅行/团购</a>
+			<a href="#">常见问题</a>
+		</div>
+		<div class="foot_li">
+			<span>支付方式</span>
+			<a href="#">货到付款</a>
+			<a href="#">在线支付</a>
+			<a href="#">分期付款</a>
+			<a href="#">邮局汇款</a>
+			<a href="#">公司转账</a>
+		</div>
+		<div class="foot_li">
+			<span>售后政策</span>
+			<a href="#">价格保护</a>
+			<a href="#">退款说明</a>
+			<a href="#">返修/退换货</a>
+			<a href="#">取消订单</a>
+		</div>
+	</div>
+</footer>
+
+<div class="clearfix"></div>
+
+<div class="copyright">
+	Copyright &copy;2010-2021 甜蜜家园Sweet Home.com版权所有 浙ICP88888888号
+</div>
+
+<div id="register5" class="reveal-modal">
+		<h1>商品删除</h1>
+		<form method="get" action="product/delece">
+			<table>
+				<tr>
+				<td><label>输入商品名称：</label></td>
+				<td><input type="text" name="product_name"></td>
+				<tr>
+					<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+				</tr>
+			 </table>
+		</form>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+<div id="register" class="reveal-modal">
+		<h1>注册</h1>
+		<form method="post" action="user/reg">
+			<table>
+				<tr>
+				<td><label>您的姓名：</label></td>
+				<td><input type="text" name="uname"></td>
+				</tr>
+					<tr>
+					 <td><label >输入密码：</label></td>
+					 <td><input type="password" name="upwd"></td>
+				 </tr>
+				 <tr>
+					 <td><label >输入邮箱：</label></td>
+					 <td><input type="text" name="email" ></td>
+				 </tr>
+				 <tr>
+					 <td><label>输入手机：</label></td>
+				 <td><input type="text" name="phone" ></td>
+				</tr>
+				<tr>
+					<td><label >性别：</label></td>
+				<td><input type="text" name="gender" ></td>
+			   </tr>
+				<tr>
+					<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+				</tr>
+			 </table>
+		</form>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+<div id="register1" class="reveal-modal">
+		<!-- <form method="post" action="user/logout" >
+			<input type="submit" value="退出登录">
+		</form> -->
+				
+		<h1>用户登录</h1>
+		<form method="post" action="user/login" style="display: block " id="dl" >
+	           <table>
+				<tr>
+				<td><label>您的姓名：</label></td>
+				<td><input type="text" name="uname"></td>
+				</tr>
+					<tr>
+					 <td><label >输入密码：</label></td>
+					 <td><input type="password" name="upwd"></td>
+				 </tr>
+				<tr>
+					<td colspan="2" align="center"><input type="image" src="images/buttom.jpg" onclick="dl()"></td>
+					<h3 onclick="zx()">注销</h3>
+					<h3 onclick="xg()">修改信息</h3>
+					
+
+				</tr>
+			 </table>
+			</form>
+			
+			<form method="get" action="user/delete" style="display:none " id="zx">
+			 <table>
+				<tr>
+				<td><label>用户编号</label></td>
+				<td><input type="text" name="uid"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="image" src="images/zhuxiao.jpg"></td>
+				</tr>
+				
+			 </table>
+		</form>
+		<form method="get" action="user/update" style="display:none " id="xg">
+			<table>
+					<tr>
+					<td><label>用户编号：</label></td>
+					<td><input type="text" name="uid"></td>
+					</tr>
+				<tr>
+				<td><label>您的姓名：</label></td>
+				<td><input type="text" name="uname"></td>
+				</tr>
+				<tr>
+					 <td><label >输入密码：</label></td>
+					 <td><input type="password" name="upwd"></td>
+				 </tr>
+				 <tr>
+					<td><label >输入邮箱：</label></td>
+					<td><input type="text" name="email"></td>
+				</tr>
+				<tr>
+					<td><label >输入手机：</label></td>
+					<td><input type="text" name="phone"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+				</tr>
+			 </table>
+		</form>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+<div id="register2" class="reveal-modal">
+			<form method="get" action="/cart/list" style="display:none " id="gwlist">
+					<tr>
+							<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+						</tr>
+						
+			</form>
+			
+			<form method="get" action="/cart/del" style="display:none " id="gwdel">
+				<tr>
+						<td><label >输入编号：</label></td>
+						<td><input type="text" name="cid"></td>
+					</tr>
+					<tr>
+							<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+						</tr>
+						
+			</form>
+			<form method="get" action="/cart/add" style="display:none " id="gwadd">
+				<!-- <tr>
+					<td><label >商品编号：</label></td>
+					<td><input type="text" name="product_id"></td>
+				</tr> -->
+				<tr>
+						<td><label >商品名称：</label></td>
+						<td><input type="text" name="cid"></td>
+					</tr>
+					<tr>
+						<td><label >商品数量：</label></td>
+						<td><input type="text" name="count"></td>
+					</tr>
+					<tr>
+							<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+						</tr>
+						
+			</form>
+		<h3 onclick="cartlist()">购物车列表</h3>
+		<h3 onclick="cartdelete()">删除购物车</h3>
+		<h3 onclick="cartadd()">添加购物车</h3>
+
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+<div id="register3" class="reveal-modal">
+		<h1>顾客列表</h1>
+		<form method="get" action="user/list">
+			<table>
+				<tr>
+					<td><label>编号：</label></td>
+					<td><input type="text" name="uid"></td>
+				</tr>
+				<tr>
+					<td><label>数量：</label></td>
+					<td><input type="text" name="count"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="image" src="images/buttom.jpg"></td>
+				</tr>
+			</table>
+		</form>
+		<a class="close-reveal-modal">&#215;</a>
+</div>
+		
+<div id="register4" class="reveal-modal">
+			<h2>商品详情</h2>
+   <form action="/product/detail" method="get">
+  编号：<input type="text" name="lid">
+          <input type="submit">
+          </form>
+			<a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+
+<script src="js/jquery-1.6.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/jquery.reveal.js"></script>
+<script>
+        var mySwiper = new Swiper('.swiper-container',{
+
+          autoplay:true,//可选选项
+        })
+</script>
+
+
+<script>
+function zx(){
+    document.getElementById("dl").style.display="none";
+	document.getElementById("zx").style.display="block";
+
+}
+function dl(){
+	document.getElementById("dl").style.display="block";
+	document.getElementById("zx").style.display="none";
+}
+function xg(){
+	document.getElementById("dl").style.display="none";
+	document.getElementById("xg").style.display="block";
+}
+function cartlist(){
+document.getElementById("gwlist").style.display="block";
+document.getElementById("gwdel").style.display="none";
+document.getElementById("gwadd").style.display="none";
+
+}
+function cartdelete(){
+	document.getElementById("gwdel").style.display="block";
+	document.getElementById("gwlist").style.display="none";
+	document.getElementById("gwadd").style.display="none";
+
+}
+function cartadd(){
+	document.getElementById("gwadd").style.display="block";
+	document.getElementById("gwlist").style.display="none";
+	document.getElementById("gwdel").style.display="none";
+}
+</script>
+
+</body>
+</html>
